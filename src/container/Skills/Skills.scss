@@ -1,0 +1,409 @@
+#skills {
+    position: relative;
+  
+    // disable the default padding styles
+    .app__wrapper {
+      padding: 0;
+  
+    }
+}
+
+.skills {
+    flex: 1;
+    //margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    margin: 8rem 2rem 0rem 2rem;
+    align-items:flex-start;
+    width: 85vw;
+
+    
+    
+    .hard_skills {
+        width:45vw;
+        margin-left: -30px;
+
+        
+        p {
+            
+            color: var(--secondary-color);
+            display: inline-block;
+            //text-align: center;
+            //align-items: left;
+            font-size: xx-large;
+            margin-bottom: 1vh;
+
+        }
+
+        .hard_skills-content {
+            margin-left: 2vw;
+            margin-right: 2vw;
+            margin-bottom: 2vh;
+        
+
+
+            .hard_skill {
+                margin-top: 3vh;
+                display: flex;
+
+                &:hover {
+                    //border: 1px solid var(--black-color);
+                    //padding: 1rem;
+                    border-radius: 1rem;
+                    transition: all 0.3s ease-in-out;
+                    
+                    img {
+                        box-shadow: 0 0 5px 3px var(--white-color);
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            
+                
+                img {
+                    width: 85px;
+                    height: 85px;
+                    vertical-align:middle;
+                    border-radius: 50%;
+                    margin-right: 1vw;
+                    border: solid 10px;
+                    border-color: var(--white-color);
+                    background-color: white;
+                }
+
+                .hardSkillInfo {
+                    margin-top: 1vh;
+                    align-items: center;
+                    margin-left: 1vw;
+                    .hardSkillName {
+                        p{
+                            margin-bottom: 0.5vh;
+                            //text-align: center;
+                            font-size: x-large;
+                        }
+                    }
+                    .hardSkillDesc {
+                        p{
+                        //text-align: center;
+                        font-size: medium;
+                        color: var(--tertiary-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .soft_skills {
+        width:45vw;
+        margin-left: -20px;
+        padding-right: 1rem;
+        
+
+
+
+        p {
+            
+            color: var(--secondary-color);
+            display: inline-block;
+            //text-align: center;
+            //align-items: left;
+            font-size: xx-large;
+            margin-bottom: 1vh;
+
+        }
+
+        .soft_skills_content {
+            margin-left: 2vw;
+            margin-right: 2vw;
+            margin-bottom: 2vh;
+            .soft_skill {
+                display: flex;
+                margin-top: 3vh;
+
+                &:hover {
+                    //border: 1px solid var(--black-color);
+                    //padding: 1rem;
+                    border-radius: 1rem;
+                    transition: all 0.3s ease-in-out;
+                    
+                    img {
+                        box-shadow: 0 0 5px 3px var(--white-color);
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+                img {
+                    width: 85px;
+                    height: 85px;
+                    vertical-align: middle;
+                    border-radius: 50%;
+                    margin-right: 1vw;
+                    border: solid 10px;
+                    border-color: var(--white-color);
+                    background-color: white;
+
+                    &:hover {
+                        box-shadow: 0 0 5px 3px var(--white-color);
+                    }
+                }
+
+                .softSkillInfo {
+                    margin-top: 1vh;
+                    align-items: center;
+                    margin-left: 1vw;
+                    .softSkillName {
+                        p{
+                            margin-bottom: 0.5vh;
+                            //text-align: center;
+                            font-size: x-large;
+                        }
+                    }
+                    .softSkillDesc {
+                        p{
+                            //text-align: center;
+                            font-size: medium;
+                            color: var(--tertiary-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 1600px) {
+    .skills {
+        .hard_skills {
+            width:45vw;
+            margin-left: 10px;
+
+            
+            p {
+                font-size: x-large;
+            }
+
+            .hard_skills-content {
+                margin-left: 2vw;
+                margin-right: 2vw;
+                margin-bottom: 2vh;
+            
+
+
+                .hard_skill {
+                    //margin-top: 3vh;
+
+                
+                    
+                    img {
+                        width: 70px;
+                        height: 70px;
+                        border: solid 7px;
+                        border-color: var(--white-color);
+                        background-color: white;
+
+                        &:hover {
+                            box-shadow: 0 0 5px 3px var(--white-color);
+                        }
+                    }
+
+                    .hardSkillInfo {
+                        margin-top: 1vh;
+                        margin-left: 1vw;
+                        .hardSkillName {
+                            p{
+                                //margin-bottom: 0.5vh;
+                                //text-align: center;
+                                font-size: large;
+                            }
+                        }
+                        .hardSkillDesc {
+                            p{
+                            //text-align: center;
+                            font-size: small;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .soft_skills {
+            width:45vw;
+            margin-left: 20px;
+    
+    
+            p {
+                font-size: x-large;
+            }
+    
+            .soft_skills_content {
+                margin-left: 2vw;
+                margin-right: 5vw;
+                margin-bottom: 2vh;
+                .soft_skill {
+                    display: flex;
+                    margin-top: 3vh;
+                    img {
+                        width: 70px;
+                        height: 70px;
+                        border: solid 7px;
+                        border-color: var(--white-color);
+                        background-color: white;
+
+                        &:hover {
+                            box-shadow: 0 0 5px 3px var(--white-color);
+                        }
+                    }
+    
+                    .softSkillInfo {
+                        margin-top: 1vh;
+                        align-items: center;
+                        margin-left: 1vw;
+                        .softSkillName {
+                            p{
+                                //margin-bottom: 0.5vh;
+                                //text-align: center;
+                                font-size: large;
+                            }
+                        }
+                        .softSkillDesc {
+                            p{
+                                //text-align: center;
+                                font-size: small;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .skills {
+        flex-direction: column;
+        margin-left: 2vw;
+
+        .hard_skills {
+            width:85vw;
+            margin-bottom: 2vh;
+
+            p {
+                font-size: x-large;
+            }
+
+            .hard_skills-content 
+                .hard_skill {
+                    //margin-top: 3vh;
+                
+
+                    .hardSkillInfo {
+                        .hardSkillName {
+                            p{
+                                //margin-bottom: 0.5vh;
+                                //text-align: center;
+                                font-size: large;
+                            }
+                        }
+                        .hardSkillDesc {
+                            p{
+                            //text-align: center;
+                            font-size: medium;
+                            }
+                        }
+                    }
+                }
+            }
+    
+
+        .soft_skills {
+            width: 85vw;
+
+            p {
+                font-size: x-large;
+            }
+
+            .soft_skills_content {
+                .soft_skill {
+                    .softSkillInfo {
+
+                        .softSkillName {
+                            p{
+                                margin-bottom: 0.5vh;
+                                //text-align: center;
+                                font-size: large;
+                            }
+                        }
+                        .softSkillDesc {
+                            p{
+                                //text-align: center;
+                                font-size: medium;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:750px) {
+    #skills {
+        .app__navigation {
+            display: none !important;
+        }
+
+        
+    }   
+
+}
+
+@media screen and (max-width:750px) {
+    .skills {
+        p {
+            font-size: large;
+        }
+        .hard_skills {
+            .hard_skills-content {
+                .hard_skill {
+                    .hardSkillInfo {
+                        .hardSkillName {
+                            p{
+                                font-size: medium;
+                            }
+                        }
+                        .hardSkillDesc {
+                            p{
+                                font-size: x-small;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .soft_skills {
+            .soft_skills_content {
+                .soft_skill {
+                    .softSkillInfo {
+
+                        .softSkillName {
+                            p {
+                                font-size: medium;
+                            }
+                        }
+
+                        .softSkillDesc {
+                            p {
+                                font-size: x-small;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
